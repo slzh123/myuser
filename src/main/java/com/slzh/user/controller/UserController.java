@@ -18,6 +18,7 @@ public class UserController {
     public String getUserInfo(HttpServletRequest request){
 
         long v1=Math.round(Math.random()*10);
+        System.out.println("服务名称："+projectName+" 服务版本：V"+v1);
         return "服务名称："+projectName+" 服务版本：V"+v1;
     }
 }
